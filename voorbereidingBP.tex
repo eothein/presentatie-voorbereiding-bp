@@ -1,0 +1,248 @@
+%%----------------------------------------------------------------------------
+%% Presentatie HoGent Bedrijf en Organisatie
+%%----------------------------------------------------------------------------
+%% Auteur: Bert Van Vreckem [bert.vanvreckem@hogent.be]
+
+\documentclass{beamer}
+
+%==============================================================================
+% Aanloop
+%==============================================================================
+
+%---------- Packages ----------------------------------------------------------
+
+\usepackage{graphicx,multicol}
+\usepackage{comment,enumerate,hyperref}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{tikz}
+\usepackage[dutch]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+
+%---------- Configuratie ------------------------------------------------------
+
+\usetikzlibrary{arrows,shapes,backgrounds,positioning,shadows}
+
+\usetheme{hogent}
+
+%---------- Commando-definities -----------------------------------------------
+
+\newcommand{\vrstlsemeen}{29/09/2017}
+\newcommand{\vrstlsemtwee}{08/12/2017}
+\newcommand{\feedsemeen}{06/10/2017}
+\newcommand{\feedsemtwee}{22/12/2017}
+
+\newcommand{\deadlineeen}{08/01/2018}
+\newcommand{\deadlinetwee}{01/06/2018}
+\newcommand{\deadlinedrie}{20/08/2018}
+
+
+%---------- Info over de presentatie ------------------------------------------
+
+
+
+\title[BP 2017 - 2018]{Bachelorproef academiejaar 2017 2018}
+\author{Jens {Buysse} \small(\href{mailto:jens.buysse@hogent.be}{jens.buysse@hogent.be})}
+\date{\today}
+
+%==============================================================================
+% Inhoud presentatie
+%==============================================================================
+
+\begin{document}
+
+%---------- Front matter ------------------------------------------------------
+
+% Dia met het HoGent logo
+\HoGentLogo
+
+% Titeldia met faculteitslogo
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Inhoud}
+
+  \tableofcontents
+\end{frame}
+
+%---------- Inhoud ------------------------------------------------------------
+
+% Dia voor sectiekop, voorbeeld met een afbeelding onderaan de pagina
+\section{Bachelorproef}
+\sectionframe{%
+  Doelstellingen \& inhoud
+  \vfill
+  \includegraphics[width=3cm]{img/HG-woordmerk-inv}
+}
+
+\begin{frame}{Eindcompetenties}
+\begin{alertblock}{}
+	De student kan bestaande en innovatieve \textcolor{HoGentAccent6}{(IT-)oplossingen} op een \textcolor{HoGentAccent6}{methodologisch correcte manier} kritisch \textcolor{HoGentAccent6}{onderzoeken}, \textcolor{HoGentAccent6}{evalueren} en \textcolor{HoGentAccent6}{(her)ontwerpen of optimaliseren}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Doelstellingen}
+	\begin{itemize}
+		\item Kan een concrete \textcolor{HoGentAccent1}{doelstelling} en \textcolor{HoGentAccent1}{onderzoeksvragen} voor een eigen onderzoeksonderwerp formuleren en verduidelijken 
+		\item Kan de data \textcolor{HoGentAccent1}{methodologisch verantwoord} verzamelen 
+		\item Kan \textcolor{HoGentAccent1}{methodologisch verantwoorde} analyses maken van de verzamelde data 
+		\item Kan de onderzoeksvraag onderbouwd beantwoorden a.d.h.v. correcte \textcolor{HoGentAccent1}{methodologische analyses} van de verzamelde data en door verschillende alternatieve oplossingen te evalueren 
+		\item Kan in functie van de onderzoeksvragen geschikte \textcolor{HoGentAccent1}{vakliteratuur} evalueren, selecteren en verwerken in een \textcolor{HoGentAccent1}{literatuurstudie} 
+		\item Kan een \textcolor{HoGentAccent1}{gestructureerd wetenschappelijk document} schrijven, voorzien van referenties en conform de aangereikte template
+	\end{itemize}
+\end{frame}
+
+\section{Organisatie}
+\sectionframe{}
+\subsection{Ondersteuning \& Opvolging}
+
+\begin{frame}{Ondersteuning \& Opvolging}
+\begin{description}
+	\item[Promotor] Is een lector informatica die het proces en opvolging ondersteunt. Dit is je eerste lijn bij vragen en problemen.
+	\item[Co-promotor] Is een vakexpert (niet noodzakelijk @Hogent) en helpt je inhoudelijk. \textcolor{HoGentAccent1}{Deze co-promotor moet je zelf zoeken.}
+	\item[Bachelorproefco\"ordinator] Co\"ordineert de algemene werking van de bachelorproeven. Heb je in principe geen direct contact mee.
+\end{description}
+\end{frame}
+
+
+
+\subsection{Proces}
+\begin{frame}{Workflow}
+	\begin{enumerate}
+		\item Je zoekt een onderwerp en een co-promotor
+		\item Je schrijft een bachelorproefvoorstel volgens de richtlijnen
+		\item Je dient het voorstel in
+		\begin{itemize}
+			\item semester 1 : \vrstlsemeen
+			\item semester 2 : \vrstlsemtwee
+		\end{itemize}
+		\item  Je krijgt feedback op uw voorstel
+		\begin{itemize}
+			\item semester 1: \feedsemeen
+			\item semester 2: \feedsemtwee
+		\end{itemize} 
+		\item Je maakt de bachelorproef volgens de richtlijnen
+		\item Je dient uw bachelorproef in volgens de richtlijnen
+		 \begin{itemize}
+		 	\item semester 1: \deadlineeen
+		 	\item semester 2: \deadlinetwee
+		 	\item herexamen: \deadlinedrie
+		 \end{itemize}
+	 	\item Je verdedigt uw BP voor een jury 
+	\end{enumerate}
+\end{frame}
+
+\section{Een BP-onderwerp}
+\sectionframe{}
+\begin{frame}{Een onderwerp kiezen}
+	\begin{itemize}
+		\item Studie van een ICT-gerelateerd onderwerp (bv. via je stage, via vak onderzoekstechnieken)
+		\item Voldoende uitdagend, maar realistisch
+		\item Start vanuit concreet probleem/vraag uit het werkveld
+		\item Gaat verder dan het verzamelen van informatie
+		\item Nuttig voor anderen in je vakgebied
+		\item Origineel en individueel
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Niet-aanvaardbaar \dots}
+	\begin{itemize}
+		\item Zuivere literatuurstudie
+		\item Programmeerproject
+		\item Vergelijking van frameworks, producten, services zonder
+		concrete case, zonder requirementsanalyse
+		\item  Hergebruik resultaten stage
+		\item  \dots
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Inspiratie nodig ?}
+	\begin{itemize}
+		\item Stagebedrijf
+		\begin{itemize}
+		\item maar losstaand van stageopdracht!
+		\item stageopdracht = uitvoerend
+		\item bachelorproef = onderzoekend
+	\end{itemize}
+		\item Lijst op Chamilo
+		\item Video's van conferenties in je vakgebied
+		\item Vakliteratuur (incl. blogs)
+		\item Passend binnen eigen toekomstplannen?
+		\item Lectoren specialisatievakken?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{BP voorstel}
+	Zie template !
+\end{frame}
+
+\begin{frame}{Enkele tips}
+	\begin{itemize}
+		\item Zoek een originele titel die beschrijft wat je onderzoekt. Niet het domein specifi\"eren. 
+		\item Beschrijf dit “objectief” (geen “ik”, geen “opstel-stijl”)
+		\begin{itemize}
+			\item \textcolor{HoGentAccent2}{NIET}: “Ik vind cloud-computing heel interessant dus wil dit voor mijn
+			bachelorproef nader bestuderen.”
+			\item \textcolor{HoGentAccent3}{WEL}: “Firma X is op zoek naar een open source platform voor het
+			opzetten van IaaS in eigen beheer.”
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\section{Indienen}
+\sectionframe{}
+\begin{frame}{Hoe indienen}
+	Op \href{https://scriptie.hogent.be/}{https://scriptie.hogent.be/}
+	\begin{enumerate}
+		\item plagiaatcontrole
+		\item $\geq 15/20$: ter beschikking via \href{bib.hogent.be}{bib.hogent.be}
+\end{enumerate}
+
+Op vraag van een van de partijen kan ook een papieren versie gevraagd worden (af te spreken met je promotor). 
+
+\end{frame}
+
+\begin{frame}{Ontvankelijkheid}
+	Enkele vereisten (niet gelimiteerd tot )
+	\begin{enumerate}
+		\item Voldoet aan alle voorwaarden vernoemd in de BP richtlijnen.
+		\item Minimumlengte (30 blz en 10K woorden)
+		\item Scriptie-onderwerp was formeel goedgekeurd
+		\item Doorstaat plagiaatcontrole
+		\item Vormvereisten gerespecteerd (ook taal!)
+		\item Referentielijst en verwijzingen volgens APA-stijl
+		\item Consistente, strakke lay-out (LaTeX!)
+		\item Voorpagina volgens sjabloon (scriptie.hogent.be)
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Beoordeling}
+	Verschillende niveaus:
+	\begin{itemize}
+		\item onvoldoende (<10), voldoende ($\geq$10), goed ($\geq$13), zeer goed
+		($\geq$15), uitstekend ($\geq17$), uitmuntend ($19$)
+		\item Alle indicatoren voor een bepaald niveau moeten behaald
+		zijn om het overeenkomstige examencijfer te behalen
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tot slot}
+	Let op! We houden je niet meer bij het handje
+	\begin{itemize}
+	\item Resultaat Bachelorproef is jouw verantwoordelijkheid
+	\item Jij moet ons overtuigen van wat je kan
+	\item Laat dit niet liggen tot na je stage...
+	\item Lees de richtlijnen!
+		\end{itemize}
+\end{frame}
+%---------- Back matter -------------------------------------------------------
+
+\end{document}
